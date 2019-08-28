@@ -1,0 +1,51 @@
+
+.hero {
+  background: 
+  linear-gradient(rgba(28, 32, 33, 0.6), rgba(28, 32, 33, 0.6)),
+    url(/assets/images/Hero-Image.jpg);
+  height: calc(100vh - 70px);
+  background-position: bottom;
+
+  .button{
+    position: absolute;
+    bottom: 5vh;
+  }
+
+  &__content{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%
+  }
+
+  &__title{
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    font-size: 4em;
+    padding: 0.4em 0;
+
+    &::before{
+      content: " ";
+      position: absolute;
+      height: 1px;
+      background-color: #fff;
+      top: 0;
+      right: -50px;
+      width: 110%;
+    }
+    &::after{
+      content: " ";
+      position: absolute;
+      height: 1px;
+      background-color: #fff;
+      bottom: 0;
+      left: -50px;
+      width: 110%;
+    }
+    
+  }
+
+}
+

@@ -1,0 +1,27 @@
+
+.intros{
+    overflow: hidden;
+    &__intro{
+        padding: 8em 10%;
+        align-items: center;
+    }
+    &__intro--dark{
+        background: #f1f1f1;
+        flex-direction: row-reverse;        
+    }
+    &__image img {
+        width: 100%;
+        box-shadow: 40px 40px #d1d1d1;
+    }
+    &__title{
+        padding-bottom: 0.5em; 
+        letter-spacing: 0.02em;
+    }
+    &__text{
+        line-height: 1.8em;
+        font-size: 1.1em;
+        font-weight: 300;
+        letter-spacing: 0.02em;
+    }
+}
+

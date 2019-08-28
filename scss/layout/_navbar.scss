@@ -1,0 +1,47 @@
+
+nav.navbar {
+  min-height: 70px;
+  background: $primary;
+}
+.navbar a{
+    color: #fff !important;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.navbar__logo {
+  position: absolute;
+  left: calc(50vw - 97.5px);
+  top: 10px;
+  z-index: 1;
+}
+
+.navbar__logo img {
+  max-height: 70px;
+}
+
+.navbar:after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 40px solid $primary;
+  }
+
+  .navbar__leftnav{
+      padding-left: 10%;
+  }
+  .navbar__rightnav{
+    padding-right: 10%;
+}
+
+.custom-toggler.navbar-toggler-icon {
+    color: rgb(255,102,203);
+  } 
+  a.nav-link {
+    font-size: 0.8em;
+}

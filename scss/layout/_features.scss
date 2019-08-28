@@ -1,0 +1,73 @@
+.features {
+  padding: 6em 10%;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+  }
+  &__box {
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+  &__background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    transition: 2s ease-in-out;
+  }
+  &__restaurant-bg {
+    background: url(/assets/images/food.jpg);
+  }
+  &__vineyards-bg {
+    background: url(/assets/images/vineyards.jpg);
+  }
+  &__accommadation-bg {
+    background: url(/assets/images/accomm.jpg);
+  }
+  &__wines-bg {
+    background: url(/assets/images/barrels.jpg);
+  }
+  &__content {
+    position: absolute;
+    height: 94%;
+    width: 96%;
+    top: 3%;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    padding: 4em;
+    border: 1px solid #ababab;
+    h3 {
+      color: #fff;
+    }
+    p {
+      font-weight: 300;
+      color: #eaeaea;
+    }
+  }
+  &__content-wrap {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(28, 32, 33, 0.6);
+    opacity: 0;
+    transition: 0.5s;
+
+    &:hover{
+        opacity: 1;
+    }
+  }
+
+}
+.features__background-scale{
+        transform: scale(1.2);
+        transition: 2s ease-in-out;
+}
+

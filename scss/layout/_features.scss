@@ -17,19 +17,19 @@
     height: 100%;
     width: 100%;
     background-position: center center;
-    transition: 2s ease-in-out;
+    transition: 3s ease-in-out;
   }
   &__restaurant-bg {
-    background: url(/assets/images/food.jpg);
+    background: url(/assets/images/food.jpg) center;
   }
   &__vineyards-bg {
-    background: url(/assets/images/vineyards.jpg);
+    background: url(/assets/images/vineyards.jpg) center;
   }
   &__accommadation-bg {
-    background: url(/assets/images/accomm.jpg);
+    background: url(/assets/images/accomm.jpg) center;
   }
   &__wines-bg {
-    background: url(/assets/images/barrels.jpg);
+    background: url(/assets/images/barrels.jpg) center;
   }
   &__content {
     position: absolute;
@@ -60,14 +60,34 @@
     opacity: 0;
     transition: 0.5s;
 
-    &:hover{
-        opacity: 1;
+    &:hover {
+      opacity: 1;
     }
   }
-
 }
-.features__background-scale{
-        transform: scale(1.2);
-        transition: 2s ease-in-out;
+.features__background-scale {
+  transform: scale(1.1);
+  transition: 3s ease-in-out;
 }
 
+@media (max-width: 1400px) {
+  .features__box {
+    height: 350px;
+  }
+}
+@media (max-width: 1100px) {
+  .features__box {
+    height: 250px;
+  }
+}
+@media (max-width: 991px) {
+  .features__box {
+    height: 300px;
+  }
+  .features__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .features__content-wrap {
+    opacity: 1;
+  }
+}

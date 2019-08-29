@@ -1,12 +1,11 @@
-
 nav.navbar {
   min-height: 70px;
   background: $primary;
 }
-.navbar a{
-    color: #fff !important;
-    font-weight: 300;
-    letter-spacing: 1px;
+.navbar a {
+  color: #fff !important;
+  font-weight: 300;
+  letter-spacing: 1px;
 }
 
 .navbar__logo {
@@ -21,27 +20,54 @@ nav.navbar {
 }
 
 .navbar:after {
-    content: "";
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    border-left: 200px solid transparent;
-    border-right: 200px solid transparent;
-    border-top: 40px solid $primary;
-  }
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 40px solid $primary;
+}
 
-  .navbar__leftnav{
-      padding-left: 10%;
-  }
-  .navbar__rightnav{
-    padding-right: 10%;
+.navbar__leftnav {
+  padding-left: 10%;
+  margin-right: 200px;
+}
+.navbar__rightnav {
+  padding-right: 10%;
+  margin-left: 200px;
 }
 
 .custom-toggler.navbar-toggler-icon {
-    color: rgb(255,102,203);
-  } 
-  a.nav-link {
-    font-size: 0.8em;
+  color: rgb(255, 102, 203);
+}
+a.nav-link {
+  font-size: 0.8em;
+  opacity: 0.8;
+}
+
+.navbar-nav {
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.cart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-left: 1px solid #616161;
+  background: none;
+
+  &__icon{
+    font-size: 25px;
+    padding: 0 1em;
+    opacity: 0.7;
+  }
 }

@@ -5,6 +5,7 @@
     url(/assets/images/Hero-Image.jpg);
   height: calc(100vh - 70px);
   background-position: bottom;
+  overflow: hidden;
 
   .button{
     position: absolute;
@@ -25,27 +26,34 @@
     position: relative;
     font-size: 4em;
     padding: 0.4em 0;
-
-    &::before{
-      content: " ";
-      position: absolute;
-      height: 1px;
-      background-color: #fff;
-      top: 0;
-      right: -60px;
-      width: 110%;
-    }
-    &::after{
-      content: " ";
-      position: absolute;
-      height: 1px;
-      background-color: #fff;
-      bottom: 0;
-      left: -60px;
-      width: 110%;
-    }
-    
+    text-align: center
+   
   }
+  &__wrap{
+    position: relative;
+  }
+  &__top-line{
+    height: 1px;
+    width: 110%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    right: -10%;
+    display: none;
+  }
+  &__bot-line{
+    height: 1px;
+    width: 110%;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: -10%;
+    display: none;
+  }
+  
 
+}
+.delay-visable{
+  display: block;
 }
 

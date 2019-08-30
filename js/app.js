@@ -2,7 +2,8 @@ let hovers = document.querySelectorAll(".features__content-wrap")
 let scales = document.querySelectorAll(".features__background")
 let slideleft = document.querySelector(".hero__top-line")
 let slideright = document.querySelector(".hero__bot-line")
-
+let cart = document.querySelector(".cart")
+let content= document.querySelector(".content")
 
 // Hover Effects
 
@@ -25,3 +26,10 @@ function delay(el, animation, animation2, duration){
 
 delay(slideleft, "slideInLeft",   "delay-visable", 700)
 delay(slideright, "slideInRight", "delay-visable", 700)
+
+
+// Toggle Cart
+
+cart.addEventListener('click', function(){
+    content.classList.toggle("content--full")
+})

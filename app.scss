@@ -10,6 +10,10 @@
 @import "../black-estate-develop/scss/layout/hero";
 @import "../black-estate-develop/scss/layout/intros";
 @import "../black-estate-develop/scss/layout/features";
+@import "../black-estate-develop/scss/layout/shop";
+@import "../black-estate-develop/scss/layout/archive";
+@import "../black-estate-develop/scss/components/lined-heading";
+@import "../black-estate-develop/scss/components/item";
 
 // BOOTSTRAP SCSS FILES
 
@@ -24,7 +28,9 @@
 
 .sidebar {
     width: 20vw;
-    
+    position: sticky;
+    top: 0;
+    height: 100%;
 }
 
 .wrap{
@@ -36,9 +42,9 @@ body{
 }
 
 .sidebar__inner {
-    position: fixed;
+    position: sticky;
     background: #a1a1a1;
-    height: calc(100vh - 70px);
+    height: calc(100vh - 0px);
     width: 20vw;
     border-top: 1px solid #616161;
     display: flex;
@@ -69,6 +75,7 @@ body{
 .sidebar__footer{
     background: $secondary;
     text-align: center;
+    padding: 1em;
 }
 
 .sidebar__content--none {

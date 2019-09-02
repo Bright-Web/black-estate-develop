@@ -1,0 +1,37 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 1em;
+
+  h5 {
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 800;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__lower {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__divider {
+    display: flex;
+    align-items: center;
+    img {
+      width: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+  &__line {
+    height: 1px;
+    background: black;
+    width: 100%;
+  }
+}

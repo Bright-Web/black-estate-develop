@@ -1,5 +1,5 @@
 
-button.button {
+.button {
     background-color: transparent;
     border: 2px solid #fff;
     color: #FFF;
@@ -8,4 +8,10 @@ button.button {
     font-family: 'Merriweather', serif;
     font-weight: 700;
     letter-spacing: 0.08em;
+}
+
+
+.button--cart{
+    color: $primary;
+    border-color: $primary;
 }

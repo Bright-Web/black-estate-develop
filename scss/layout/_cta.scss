@@ -1,0 +1,27 @@
+.cta{
+    padding: 8em 10%;
+    background: #e8e8e8;
+    text-align: center;
+
+    &__box{
+        background: 
+        linear-gradient(rgba(28, 32, 33, 0.7), rgba(28, 32, 33, 0.7)),
+          url(/assets/images/cta2.jpg);
+        background-position: bottom;
+    }
+
+    &__content {
+        color: #FFF;
+        
+        padding: 10em;
+        p {
+            padding: 1em 0;
+            font-weight: 100;
+            letter-spacing: 0.1em;
+        }
+        h3{
+            color: #FFF;
+            text-transform: uppercase;
+        }
+    }
+}

@@ -11,9 +11,12 @@
 @import "../black-estate-develop/scss/layout/intros";
 @import "../black-estate-develop/scss/layout/features";
 @import "../black-estate-develop/scss/layout/shop";
+@import "../black-estate-develop/scss/layout/cta";
 @import "../black-estate-develop/scss/layout/archive";
+@import "../black-estate-develop/scss/layout/product";
 @import "../black-estate-develop/scss/components/lined-heading";
 @import "../black-estate-develop/scss/components/item";
+@import "../black-estate-develop/scss/components/blurb";
 
 // BOOTSTRAP SCSS FILES
 
@@ -55,8 +58,6 @@ body{
  width: 100vw;
  transition: 1s;
 }
-
-
 
 .sidebar__header{
     height: 7vh;

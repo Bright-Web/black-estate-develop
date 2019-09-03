@@ -1,3 +1,22 @@
 .archive{
     padding: 8em 10%;
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+        grid-gap: 2em;
+    }
+
+    &__year{
+        font-weight: 600;
+    }
+
+    &__list{
+        ul{
+            list-style: none;
+            padding-inline-start: 0;
+        }
+    }
 }
+
+

@@ -1,0 +1,22 @@
+.product{
+    padding: 8em 10%;
+
+    &__upper{
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+        grid-gap: 10em;
+    }
+
+    &__image{
+        border: 1px solid black;
+        padding: 1em;
+
+        img{
+            width: 100%;
+        }
+    }
+    &__price{
+        font-size: 2em;
+    }
+
+}

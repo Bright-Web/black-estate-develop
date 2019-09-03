@@ -8,10 +8,18 @@
     font-family: 'Merriweather', serif;
     font-weight: 700;
     letter-spacing: 0.08em;
+    transition: 0.4s;
 }
 
 
 .button--cart{
     color: $primary;
     border-color: $primary;
+}
+button.button:hover {
+    background-color: #ffffff17;
+}
+
+button.button.button--cart:hover {
+    background-color: #eaeaea;
 }

@@ -5,6 +5,11 @@
         display: grid;
         grid-template-columns: 2fr 5fr;
         grid-gap: 10em;
+        
+        @include tablet {
+            grid-gap: 5em;
+            grid-template-columns: 3fr 5fr;
+        }
     }
 
     &__image{
@@ -37,3 +42,4 @@ input[type="number"] {
     padding: 5px;
     color: black;
 }
+

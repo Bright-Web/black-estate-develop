@@ -26,7 +26,14 @@
     position: relative;
     font-size: 4em;
     padding: 0.4em 0;
-    text-align: center
+    text-align: center;
+
+    @include tablet{
+      font-size: 3em;
+    }
+    @include mobile{
+      font-size: 3em;
+    }
    
   }
   &__wrap{
@@ -40,6 +47,10 @@
     top: 0;
     right: -10%;
     display: none;
+
+    @include mobile{
+      opacity: 0;
+    }
   }
   &__bot-line{
     height: 1px;
@@ -49,6 +60,9 @@
     bottom: 0;
     left: -10%;
     display: none;
+    @include mobile{
+      opacity: 0;
+    }
   }
   
 

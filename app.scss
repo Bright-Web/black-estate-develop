@@ -2,9 +2,11 @@
 // PROJECT SCSS FILES
 
 @import "../black-estate-develop/scss/abstracts/variables";
+@import "../black-estate-develop/scss/abstracts/mixins";
 @import "../black-estate-develop/scss/base/reset";
 @import "../black-estate-develop/scss/base/typography";
 @import "../black-estate-develop/scss/components/buttons";
+@import "../black-estate-develop/scss/layout/sidebar";
 @import "../black-estate-develop/scss/layout/footer";
 @import "../black-estate-develop/scss/layout/navbar";
 @import "../black-estate-develop/scss/layout/hero";
@@ -18,6 +20,7 @@
 @import "../black-estate-develop/scss/components/lined-heading";
 @import "../black-estate-develop/scss/components/item";
 @import "../black-estate-develop/scss/components/blurb";
+@import "../black-estate-develop/scss/components/cart-item";
 
 // BOOTSTRAP SCSS FILES
 
@@ -27,149 +30,11 @@ hr{
     border-top: 1px solid $secondary;
 }
 
-.content {
-    width: 80vw;
-    transition: 1s;
-}
-
-.sidebar {
-    width: 20vw;
-    position: sticky;
-    top: 0;
-    height: 100%;
-    box-shadow: 0px 0px 20px 0px #0000005e;
-}
-
-.wrap{
-    display: inline-flex;
-}
 
 body{
     overflow-x: hidden;
 }
 
-.sidebar__inner {
-    position: sticky;
-    background: #e8e8e8;
-    height: calc(100vh - 0px);
-    width: 20vw;
-    border-top: 1px solid #616161;
-    display: flex;
-    flex-direction: column;
-}
 
-.content--full{
- width: 100vw;
- transition: 1s;
-}
 
-.sidebar__header{
-    height: 7vh;
-    background: $primary;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h4{
-        color: #fff;
-        font-style: normal;
-        text-transform: uppercase;
-        margin: 0;
-    }
-    i{
-        position: absolute;
-        top: 0.5em;
-        left: 0.5em;
-        color: #fff;
-        cursor: pointer;
-    }
-}
 
-.sidebar__footer{
-    background: $secondary;
-    text-align: center;
-    padding: 1em;
-}
-
-.sidebar__content--none {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-.sidebar__content {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-
-}
-.sidebar__lower {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-
-.sidebar__items{
-    padding: 1em;
-    margin-right: 15px;
-}
-
-.cart-item{
-    background: #fff;
-    display: flex;    
-    position: relative;
-    font-style: italic;
-    .remove{
-        position: absolute;
-        top: 0.5em;
-        right: 0.5em;
-        color: $primary;
-        cursor: pointer;
-    }
-    p{
-        margin-bottom: 0;
-        font-size: 0.85em;
-        
-    }
-
-    &__image {
-        width: 30%;
-        padding: 1em 0;
-
-        img{
-            width:100%;
-        }
-    }
-
-    &__content{
-        width: 70%;
-        padding: 1em 1em 1em 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    &__title{
-            font-style: normal;     
-            font-weight: 600;   
-    }
-    &__qty{
-        span{
-            font-style: normal;     
-            font-weight: 600;  
-            padding-left: 1em;  
-        }
-    }
-    &__cost{
-        span{
-            font-style: normal;     
-            font-weight: 600;
-            padding-left: 1em;  
-        }
-    }
-}
-
-.cart-item--off{
-    display: none;
-}

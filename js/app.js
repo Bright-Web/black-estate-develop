@@ -8,6 +8,7 @@ let content= document.querySelector(".content")
 let cartToggle= document.querySelector(".remove")
 let cartItem= document.querySelector(".sidebar__items")
 let addCart= document.querySelector(".add-to-cart")
+let noContent= document.querySelector(".sidebar__no-content")
 
 // Hover Effects
 
@@ -47,6 +48,7 @@ cross.addEventListener('click', function(){
 
 cartToggle.addEventListener('click', function(){
     cartItem.classList.add("cart-item--off")
+    noContent.classList.add("sidebar__no-content--on")
 })
 
 // Add to cart Icon
@@ -54,6 +56,8 @@ cartToggle.addEventListener('click', function(){
 addCart.addEventListener('click', function(){
     cartItem.classList.remove("cart-item--off")
     content.classList.remove("content--full")
+    noContent.classList.remove("sidebar__no-content--on")
+
 })
 
 

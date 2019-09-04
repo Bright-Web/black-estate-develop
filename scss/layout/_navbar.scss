@@ -13,10 +13,20 @@ nav.navbar {
   left: calc(50vw - 97.5px);
   top: 10px;
   z-index: 2;
+
+  @include upto-tablet{
+    top: 7px;
+left: calc(50vw - 83px);
+}
 }
 
 .navbar__logo img {
   max-height: 70px;
+
+  @include upto-tablet{
+    max-height: 55px;
+
+}
 }
 
 .navbar:after {
@@ -78,12 +88,24 @@ a.nav-link {
   background: #242527;
   width: 100%;
   left: 0;
-  padding: 25px;
   z-index: 1;
+  ul{
+    padding: 50px;
+    text-align: center;
+  }
+  a{
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 991px){
   .cart{
     border: none;
   }
+}
+
+
+.navbar-dark .navbar-toggler {
+  color: rgba(255,255,255,0.5);
+  border: none;
 }

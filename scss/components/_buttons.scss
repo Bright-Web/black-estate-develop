@@ -16,10 +16,15 @@
     color: $primary;
     border-color: $primary;
 }
-button.button:hover {
+.button:hover {
     background-color: #ffffff17;
+    color: #fff;
+    text-decoration: none
 }
 
-button.button.button--cart:hover {
+.button.button--cart:hover {
     background-color: #eaeaea;
+    color: $primary;
 }
+
+  

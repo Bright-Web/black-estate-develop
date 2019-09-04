@@ -16,5 +16,10 @@ p{
 
 a{
   font-family: 'Merriweather', serif;
+  
 }
 
+.item__text h5:hover .item__text p:hover {
+  color: $primary;
+  text-decoration: none;
+}

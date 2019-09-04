@@ -37,4 +37,20 @@
   &__image img {
     width: 100%;
   }
+  &__4th {
+    @include tablet {
+      display: none;
+    }
+  }
+  &__cart{
+    cursor: pointer;
+  }
+}
+.item__text:hover h5, .item__text:hover p {
+  color: $primary;
+  text-decoration: none;
+}
+
+.item__text:hover{
+  text-decoration: none;
 }

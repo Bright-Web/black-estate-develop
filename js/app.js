@@ -4,11 +4,12 @@ let slideleft = document.querySelector(".hero__top-line")
 let slideright = document.querySelector(".hero__bot-line")
 let cart = document.querySelector(".cart")
 let cross = document.querySelector(".cross")
-let content= document.querySelector(".content")
-let cartToggle= document.querySelector(".remove")
-let cartItem= document.querySelector(".sidebar__items")
-let addCart= document.querySelector(".add-to-cart")
-let noContent= document.querySelector(".sidebar__no-content")
+let content = document.querySelector(".content")
+let cartToggle = document.querySelector(".remove")
+let cartItem = document.querySelector(".sidebar__items")
+let addCart = document.querySelector(".add-to-cart")
+let noContent = document.querySelector(".sidebar__no-content")
+let price = document.querySelector(".sidebar__footer-cost")
 
 // Hover Effects
 
@@ -49,6 +50,8 @@ cross.addEventListener('click', function(){
 cartToggle.addEventListener('click', function(){
     cartItem.classList.add("cart-item--off")
     noContent.classList.add("sidebar__no-content--on")
+    price.innerHTML = "$0.00"
+
 })
 
 // Add to cart Icon
@@ -57,7 +60,6 @@ addCart.addEventListener('click', function(){
     cartItem.classList.remove("cart-item--off")
     content.classList.remove("content--full")
     noContent.classList.remove("sidebar__no-content--on")
-
+    price.innerHTML = "$45.00"
 })
-
 

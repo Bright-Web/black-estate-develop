@@ -1,6 +1,10 @@
 .features {
   padding: 6em 10%;
 
+  @include mobile{
+    padding: 4em 10%;
+  }
+
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;

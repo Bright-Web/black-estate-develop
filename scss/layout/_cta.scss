@@ -1,7 +1,9 @@
 .cta{
-    padding: 8em 10%;
-    background: #e8e8e8;
     text-align: center;
+
+    @include mobile {
+        padding: 0;
+    }
 
     &__box{
         background: 
@@ -22,6 +24,10 @@
         h3{
             color: #FFF;
             text-transform: uppercase;
+        }
+
+        @include mobile{
+            padding: 7em 3em;
         }
     }
 }

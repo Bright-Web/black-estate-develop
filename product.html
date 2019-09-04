@@ -104,14 +104,14 @@
                 <h2>Home Chardonnay - 2018</h2>
                 <hr/>
             </div>
-            <div class="product__price"><d>$45.00</></div>
+            <div class="product__price"><p>$45.00</p></div>
             <div class="blurb">
                 <h5>Description</h5>
                 <p>Straw, white gold hue. Aromas of grapefruit, hazelnut, orange blossom nectarine and sea spray. The palate is rich pure and integrated with a dense core of concentrated fruit. The flavours taper to a salty mineral and long finish. This is an unfiltered wine with small amounts of sediment. Please allow the bottle to stand and settle before pouring. Decanting will allow maximum expression of aroma and purity of fruit to emerge.</p>
             </div>
             <div class="product__addcart">
                 <div class="product__qty"><input type="number" placeholder="1"></div>
-                <button class="button button--cart">Add To Cart</button>
+                <button class="button button--cart add-to-cart">Add To Cart</button>
             </div>
         </div>
     </div>
@@ -148,33 +148,151 @@
 
 </section>
 
+<section class="similar">
+    <div class="linedheading">
+        <h2>Similar Products</h2>
+        <hr/>
+    </div>
+  <div class="similar__grid">
+    <div class="item">
+      <div class="item__image">
+        <img
+          src="assets/images/Black_Estate_Home_Chardonnay_2018.jpg"
+          alt=""
+        />
+      </div>
+      <div class="item__text">
+        <h5 class="item__type">Chardonnay</h5>
+        <p class="item__name">Home - 2018</p>
+      </div>
+      <div class="item__divider">
+        <div class="item__line"></div>
+        <img src="/assets/icons/grapes.png" alt="" />
+        <div class="item__line"></div>
+      </div>
+      <div class="item__lower">
+        <div class="item__price">$45.00</div>
+        <div class="item__cart">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__image">
+        <img
+          src="assets/images/Black_Estate_Home_Chardonnay_2018.jpg"
+          alt=""
+        />
+      </div>
+      <div class="item__text">
+        <h5 class="item__type">Chardonnay</h5>
+        <p class="item__name">Home Young Vines - 2018</p>
+      </div>
+      <div class="item__divider">
+        <div class="item__line"></div>
+        <img src="/assets/icons/grapes.png" alt="" />
+        <div class="item__line"></div>
+      </div>
+      <div class="item__lower">
+        <div class="item__price">$39.00</div>
+        <div class="item__cart">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__image">
+        <img
+          src="assets/images/Black_Estate_Home_Chardonnay_2018.jpg"
+          alt=""
+        />
+      </div>
+      <div class="item__text">
+        <h5 class="item__type">Chardonnay</h5>
+        <p class="item__name">Netherwood - 2016</p>
+      </div>
+      <div class="item__divider">
+        <div class="item__line"></div>
+        <img src="/assets/icons/grapes.png" alt="" />
+        <div class="item__line"></div>
+      </div>
+      <div class="item__lower">
+        <div class="item__price">$65.00</div>
+        <div class="item__cart">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__image">
+        <img
+          src="assets/images/Black_Estate_Home_Chardonnay_2018.jpg"
+          alt=""
+        />
+      </div>
+      <div class="item__text">
+        <h5 class="item__type">Chenin Blanc</h5>
+        <p class="item__name">Home - 2017</p>
+      </div>
+      <div class="item__divider">
+        <div class="item__line"></div>
+        <img src="/assets/icons/grapes.png" alt="" />
+        <div class="item__line"></div>
+      </div>
+      <div class="item__lower">
+        <div class="item__price">$45.00</div>
+        <div class="item__cart">
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 
 <!-- ---------- End Main Content  ---------- -->
       </div>
 
       <div class="sidebar">
-        <div class="sidebar__inner">
-          <div class="sidebar__header">
-            <h4>Shopping Cart</h4>
-          </div>
-          <div class="sidebar__lower">
-            <div class="sidebar__content">
-              <div class="sidebar__content--none">
-                <p>You Have Nothing In You Cart</p>
-              </div>
+          <div class="sidebar__inner">
+            <div class="sidebar__header">
+              <i class="far fa-times-circle cross"></i>
+              <h4>Shopping Cart</h4>
             </div>
-            <div class="sidebar__footer">
-              <p class="sidebar__footer-total">Total Cost:</p>
-              <p class="sidebar__footer-cost">$90.00</p>
-              <button class="sidebar__footer-btn button button--cart">
-                Checkout
-              </button>
+            <div class="sidebar__lower">
+              <div class="sidebar__content">
+                <!-- <div class="sidebar__content--none">
+                  <p>You Have Nothing In You Cart</p>
+                </div> -->
+                <div class="sidebar__items cart-item--off">
+                  <div class="cart-item">
+                    <i class="far fa-times-circle remove"></i>
+                    <div class="cart-item__image">
+                        <img src="assets/images/Black_Estate_Home_Chardonnay_2018.jpg"alt=""/>
+                    </div>
+                    <div class="cart-item__content">
+                      <p class="cart-item__product">Product:</p>
+                      <p class="cart-item__title">Home Chardonnay - 2018</p>
+                      <p class="cart-item__qty">Quantity: <span> 1</span></p>
+                      <p class="cart-item__cost">Total Cost: <span> $45.00</span></p>
+                    </div>
+                  </div>
+                </div>
+  
+              </div>
+              <div class="sidebar__footer">
+                <p class="sidebar__footer-total">Total Cost:</p>
+                <p class="sidebar__footer-cost">$45.00</p>
+                <button class="sidebar__footer-btn button button--cart">
+                  Checkout
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
     <footer class="footer">
       <div class="footer__grid">

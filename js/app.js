@@ -3,7 +3,11 @@ let scales = document.querySelectorAll(".features__background")
 let slideleft = document.querySelector(".hero__top-line")
 let slideright = document.querySelector(".hero__bot-line")
 let cart = document.querySelector(".cart")
+let cross = document.querySelector(".cross")
 let content= document.querySelector(".content")
+let cartToggle= document.querySelector(".remove")
+let cartItem= document.querySelector(".sidebar__items")
+let addCart= document.querySelector(".add-to-cart")
 
 // Hover Effects
 
@@ -33,3 +37,23 @@ delay(slideright, "slideInRight", "delay-visable", 700)
 cart.addEventListener('click', function(){
     content.classList.toggle("content--full")
 })
+// Toggle Cart (close)
+
+cross.addEventListener('click', function(){
+    content.classList.toggle("content--full")
+})
+
+// Toggle Cart Item
+
+cartToggle.addEventListener('click', function(){
+    cartItem.classList.add("cart-item--off")
+})
+
+// Add to cart Icon
+
+addCart.addEventListener('click', function(){
+    cartItem.classList.remove("cart-item--off")
+    content.classList.remove("content--full")
+})
+
+
